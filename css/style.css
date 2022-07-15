@@ -1,0 +1,366 @@
+body{
+    font-family: oswald ,sans-serif ;
+    background-image: url(../img/4.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    overflow: hidden;
+    height: 100vh;
+}
+.leftSide{
+    background-color: #fabd6270;
+    position: relative;
+    border-radius: 3%;
+}
+nav{
+    text-align: center
+}
+.logo{
+    width: 200px;
+    height: 180px;
+    padding: 9px 0px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: white;
+    margin: 30px 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba(255 , 255, 255, .3);
+    background-color: transparent;
+}
+nav .menu{
+    margin-top: 50px;
+}
+nav .menu button {
+    width: 100%;
+    font-size: large;
+    display: block;
+    margin: 12px auto;
+    text-decoration: none;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #330000;
+    border-radius: 6px;
+    transition: all .3s;
+}
+nav .menu button:hover ,.home-content .content a:hover{
+    color: #fff;
+    background-color: #330000;
+}
+.home-content .content a{
+    width: 40%;
+    background-color: #fff;
+    border: 1px solid #330000;
+    border-radius: 6px;
+
+}
+
+.social{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+}
+.social a{
+    text-decoration: none;
+    margin: 7px;
+    transition: all .4s;
+}
+.social a i {
+    font-size: 35px;
+    color: #000;
+    transition: all .4s;
+}
+.social a :hover{
+    color: #330000;
+    transform: scale(1.8);
+}
+.nav-nav{
+    display: none;
+}
+
+
+
+/* start rightSide */
+
+.rightSide1 {
+    background-color: rgba(0 ,0 ,0 ,.5);
+    color: #fff;
+}
+.rightSide2, .rightSide3, .rightSide4 ,.rightSide5 ,.rightSide6{
+    background-color: rgba(0 ,0 ,0 ,.5);
+    color: #fff;
+    display: none;
+}
+.home-content{
+    display: flex;
+}
+.content{
+    margin: auto;
+}
+.home-content .content p {
+    position: relative;
+    padding-left: 8px;
+}
+.home-content .content p:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 90%;
+    background-color: #fff;
+}
+.myPhoto{
+    width: 100%;
+}
+.mySkills{
+    margin-top: 50px;
+}
+.mySkills h2{
+    border: #fff solid;
+    width: 30%;
+    display: block;
+}
+.skills{
+    border: #fff solid;
+    margin-top: 50px;
+}
+.skill{
+    background-color: #fff;
+    color: #330000;
+    padding: 9px 12px;
+    letter-spacing: 1px;
+    margin: 50px;
+}
+.bgColor{
+    background-color: #330000;
+}
+
+
+
+
+
+
+
+
+/* media query */
+
+
+@media screen and (max-width :480px)
+{
+   
+    .leftSide{
+        width: 20% !important;
+        height: 100%;
+    }
+    .social a i{
+        font-size: 45px;
+        margin: 3px;
+    }
+    .social{
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+    }
+    
+    header button{
+        background-color: transparent;
+        border: #fff 1px solid;
+        padding: 5px 8px;
+        border-radius: 8px;
+        color: #fff;
+    }
+    .rightSide1,.rightSide2, .rightSide3, .rightSide4 ,.rightSide5 ,.rightSide6{
+        width: 80% !important;
+    }
+    nav .menu button{
+        font-size: 16px;
+    }
+    .logo{
+        width: 80%;
+        height: 40%;
+        padding: 9px 0px;
+        border: 5px solid white;
+        border-radius: 50%;
+        background-color: white;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+        border: 1px solid #fabd6200;
+        padding: 9px 0px;
+        margin: 50px 0;
+        background-color: transparent;
+    }
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content .content {
+        width: 100% !important;
+        height: 50% !important;
+        margin-top: 60px;
+    }
+    .home-content .img-content{
+        width: 100% !important;
+        height: 50% !important;
+    }
+    .home-content .img-content img{
+        position: absolute;
+        width: 80%;
+        bottom: 0;
+        right: 0;
+    }
+    
+}
+
+
+
+@media screen and (min-width : 481px ) and (max-width : 768px )
+{
+    
+    .leftSide{
+        width: 20%;
+        height: 100%;
+    }
+    
+    .social{
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+    }
+    .fa-brands{
+        font-size: 40px !important;
+        margin: 5px;
+    }
+    
+    .rightSide1,.rightSide2, .rightSide3, .rightSide4 ,.rightSide5 ,.rightSide6{
+        width: 80%;
+        position: relative;
+    }
+    nav .menu button{
+        font-size: 15px;
+    }
+    .logo{
+        width: 80%;
+        height: 40%;
+        padding: 9px 0px;
+        border: 5px solid white;
+        border-radius: 50%;
+        background-color: white;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+        border: 1px solid #fabd6200;
+        padding: 9px 0px;
+        margin: 50px 0;
+        background-color: transparent;
+    }
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content .content {
+        width: 100% !important;
+        height: 50% !important;
+        margin-top: 60px;
+
+    }
+    .home-content .img-content{
+        width: 100% !important;
+        height: 50% !important;
+    }
+    .home-content .img-content img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px)
+{
+
+    .leftSide{
+        width: 20%;
+        height: 100%;
+    }
+    
+    .social{
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+    }
+    .fa-brands{
+        font-size: 40px !important;
+        margin: 5px;
+    }
+    
+    .rightSide1,.rightSide2, .rightSide3, .rightSide4 ,.rightSide5 ,.rightSide6{
+        width: 80%;
+        position: relative;
+    }
+    nav .menu button{
+        font-size: 15px;
+    }
+    .logo{
+        width: 80%;
+        height: 40%;
+        padding: 9px 0px;
+        border: 5px solid white;
+        border-radius: 50%;
+        background-color: white;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+        border: 1px solid #fabd6200;
+        padding: 9px 0px;
+        margin: 50px 0;
+        background-color: transparent;
+    }
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .home-content .content {
+        width: 100% !important;
+        height: 50% !important;
+        margin-top: 60px;
+    }
+    .home-content .img-content{
+        width: 100% !important;
+        height: 50% !important;
+    }
+    .home-content .img-content img{
+        position: absolute;
+        width: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
